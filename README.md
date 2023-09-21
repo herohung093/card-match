@@ -1,27 +1,45 @@
-# CardMatch
+# Card Match Game
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.2.
+A simple card matching game built with Angular.
 
-## Development server
+## Installation
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Before running the application, make sure you have Node.js and Angular CLI installed.
 
-## Code scaffolding
+npm install
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Configuration
 
-## Build
+You can configure the time limit for the game by modifying the `config.ts` file located in the `src/configuration` directory.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```javascript
+// src/configuration/config.ts
+export const TIMER = 300; // Change the time limit (in seconds) here
+```
+
+
+## Running the Application
+
+To start the application, run the following command:
+
+ng serve
+Open your web browser and navigate to http://localhost:4200/ to play the game.
 
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## Usage
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Match the cards within the specified time limit to win the game!
 
-## Further help
+## Contributing
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Contributions are welcome! Please submit issues or pull requests.
+
+
+
+Acknowledgments
+Card SVG images from source.
+Conclusion
+Have fun playing the Card Match Game! If you have any
