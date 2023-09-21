@@ -1,0 +1,21 @@
+<div>
+  <div class="game-board" [class.disabled]="gameFinished" [style.gridTemplateColumns]="'repeat(' + columns + ', 1fr)'">
+    <div *ngFor="let card of cards" class="card" (click)="cardClicked(card)">
+      <app-card [card]="card"></app-card>
+    </div>
+  </div>
+
+  <app-timer *ngIf="gameStarted && !gameFinished" [timer]="timer" (timeOutEvent)="handleTimeOutEvent()"></app-timer>
+
+  <h2 class="congrat-message" *ngIf="timeFinishedGame >= 0">
+    Congratulation you finished the game in {{timeFinishedGame * 1000 | date:'mm:ss'}}
+  </h2>
+
+  <h2 class="good-luck-message appear" *ngIf="gameFinished && timeFinishedGame === -1">
+    Good luck next time!
+  </h2>
+
+  <div class="button-container">
+    <button class="reset-button" *ngIf="gameFinished" (click)="resetGame()">Reset Game</button>
+  </div>
+</div>

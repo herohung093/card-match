@@ -1,0 +1,19 @@
+.timer {
+    font-size: 54px; 
+    font-weight: bold; 
+    color: #333; 
+    background-color: #f0f0f0; 
+    padding: 10px 20px; 
+    border: 1px solid #ccc; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 10vh;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  
+  .timer span {
+    display: inline-block; 
+    margin: 0 5px;
+  }

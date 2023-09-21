@@ -1,0 +1,88 @@
+.game-board {
+    display: grid;
+    grid-gap: 10px;
+    justify-items: center;
+    align-items: center;
+    margin-top: 5%;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 5px solid #4caf50;
+  }
+  
+  @media (max-width: 768px) {
+    .game-board {
+      margin-left: 10%;
+      margin-right: 10%;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .game-board {
+      margin-left: 5%;
+      margin-right: 5%;
+      padding-top: 2px;
+      padding-bottom: 2px;
+    }
+  }
+  
+  .congrat-message {
+    font-size: 34px;
+    text-align: center;
+    background: linear-gradient(45deg, #4caf50, #45a049);
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  
+  .good-luck-message {
+    font-size: 34px;
+    text-align: center;
+    background: linear-gradient(45deg, #f6a104, #ff0101);
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    margin-left: 20%;
+    margin-right: 20%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  /* Define a keyframes animation to gradually increase opacity */
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .good-luck-message.appear {
+    animation: fade-in 1s ease forwards;
+  }
+  
+  .disabled {
+    background-color: #ccc;
+    opacity: 0.6;
+    pointer-events: none;
+  }
+  
+  .reset-button {
+    font-size: 34px;
+    border-radius: 5px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+  }
+  
